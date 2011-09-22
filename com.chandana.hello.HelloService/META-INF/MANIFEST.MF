@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: HelloService
+Bundle-SymbolicName: com.chandana.hello.HelloService
+Bundle-Version: 1.0.0
+Bundle-Activator: com.chandana.hello.helloservice.Activator
+Bundle-Vendor: CHANDANA
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
