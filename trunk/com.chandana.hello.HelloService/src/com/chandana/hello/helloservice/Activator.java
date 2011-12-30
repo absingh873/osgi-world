@@ -16,7 +16,7 @@ public class Activator implements BundleActivator {
 	 * @see org.osgi.framework.BundleActivator#start(org.osgi.framework.BundleContext)
 	 */
 	public void start(BundleContext context) throws Exception {
-		System.out.println("Boundle Started.....!!!!!");
+		System.out.println("Bundle Started.....!!!!!");
 		HelloService service = new HelloServiceImpl();
 		serviceRegistration = context.registerService(HelloService.class.getName(), service,null);
 	}
@@ -26,7 +26,7 @@ public class Activator implements BundleActivator {
 	 * @see org.osgi.framework.BundleActivator#stop(org.osgi.framework.BundleContext)
 	 */
 	public void stop(BundleContext context) throws Exception {
-		System.out.println("Boundle Stoped.....!!!!!");
+		System.out.println("Bundle Stoped.....!!!!!");
 		serviceRegistration.unregister();
 	}
 
